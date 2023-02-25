@@ -1,0 +1,31 @@
+{
+  "name": "hello-app",
+  "version": "1.0.0",
+  "description": "hello world!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Zachary Goldstein",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^23.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bower": "^1.8.14",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.6.3"
+  },
+  "build": {
+    "extraResources": "python"
+  }
+}
